@@ -13,7 +13,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: #00ff51;
+    background-color: #cbc817;
     padding: 15px;
     border-radius: 40px; /* Rounded Corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -48,3 +48,68 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* Layout Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 90%;
+    margin: 100px auto 0; /* Below Navbar */
+    padding: 20px;
+}
+
+/* Left Section (Big Photo) */
+.left {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    /* align-items: bottom; */
+}
+
+.left img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Section */
+.right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Top & Bottom Sections */
+.top, .bottom {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left, .right {
+        width: 100%;
+    }
+}
