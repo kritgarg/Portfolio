@@ -3,4 +3,16 @@ body {
   background-color: black;
 }
 
-/* Custom font families should be added in tailwind.config.js, not in CSS */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
